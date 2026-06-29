@@ -7,6 +7,7 @@ h1{
     font-size: 100px;
     text-align: center;
     font-family:ifont, fantasy;
+    margin-bottom: 120px;
 }
 .quiz{
 background-color:black;
@@ -26,35 +27,163 @@ flex-direction: column;
     border-radius: 10px;
     width: 700px;
     height: 200px;
-    margin-top:120px;
+    cursor: pointer;
+    box-shadow: 0px 8px #000000;
+    position: relative;
+    top:0px;
 }
 .start:hover{
     background-color:white;
     color:black;
 }
+.start:active{
+    box-shadow: 0px 2px #000000;
+    top:6px;
+}
 .button-container{
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    width: 500px;
-    height: 20px;
+  justify-content: center; 
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+    gap: 30px;
+    margin-top: 100px;
+    height: 200px;
 }
-.button-container:hover{
+.button-container button:hover{
     background-color:white;
     color:black;
 }
-.button1{
+.easy_btn{
+    flex: 1;
     background-color:green;
     color:black;
     font-size: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+     box-shadow: 0px 8px #000000;
+    position: relative;
+    top:0px;
 }
-.button2{
+.easy_btn:active{
+    box-shadow: 0px 2px #000000;
+    top:6px;
+}
+.normal_btn{
+    flex: 1;
     background-color:yellow;
     color:black;
+    border-radius: 10px;
     font-size: 50px;
+    cursor: pointer;
+     box-shadow: 0px 8px #000000;
+    position: relative;
+    top:0px;
 }
-.button3{
+.normal_btn:active{
+    box-shadow: 0px 2px #000000;
+    top:6px;
+}
+.hard_btn{
+    flex: 1;
     background-color:lightcoral;
     color:black;
     font-size: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+     box-shadow: 0px 8px #000000;
+    position: relative;
+    top:0px;
+}
+.hard_btn:active{
+    box-shadow: 0px 2px #000000;
+    top:6px;
+}
+.Quiz{
+    display: block;
+    text-align: center;
+    background-color:black;
+    border: 20px solid yellow;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.answer-buttons{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    margin-top:40px;
+}
+.choice-btn{
+    width: 300px;
+    height: 220px; display: inline-block;
+    background-color: red;
+    color: white;
+    border:none;
+    cursor: pointer;
+    font-size:50px;
+    border-radius: 10px;
+    margin-top: 100px;
+     box-shadow: 0px 8px #000000;
+    position: relative;
+    top:0px;
+}
+.choice-btn:hover{
+    background-color: white;
+    color: black;
+}
+.choice-btn:active{
+    box-shadow: 0px 2px #000000;
+    top:6px;
+}
+.question{
+    font-size: 60px;
+    color:white;
+    margin-bottom: 20px;
+}
+.result{
+    font-size:30px;
+    font-weight:bold;
+    color: white;
+    text-align: center;
+}
+.retry-btn{
+    display:none;
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-size:50px;
+    border-radius: 10px;
+    margin-top: 100px;
+     box-shadow: 0px 8px #000000;
+    position: relative;
+    top:0px;
+}
+.retry-btn:active{
+    box-shadow: 0px 2px #000000;
+    top:6px;
+}
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column; 
+    height: auto;           
+    gap: 15px;             
+  }
+
+  
+  .answer-buttons {
+    flex-direction: column; 
+    gap: 15px;
+  }
+
+  
+  .easy_btn, .normal_btn, .hard_btn, .choice-btn {
+    width: 100%;       
+    font-size: 30px;   
+  }
 }

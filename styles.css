@@ -172,6 +172,16 @@ flex-direction: column;
     top:6px;
 }
 @media (max-width: 768px) {
+    h1{
+        font-size: 24px;
+    }
+    .start{
+        width: 80%;
+        max-width: 300px;
+        height: 60px;
+        font-size: 16px;
+        box-shadow: 0px 4px #000000;
+    }
   .button-container {
     display: flex;
     flex-direction: column; 
@@ -192,7 +202,7 @@ flex-direction: column;
     width: 80%;   
     max-width: 300px;    
     height: 60px;
-    font-size: 20px;   
+    font-size: 16px;   
     line-height: 60px;
     text-align: center;
   }

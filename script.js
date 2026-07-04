@@ -210,7 +210,7 @@ normal_btn.addEventListener("click", startQuiz);
 hard_btn.addEventListener("click", startQuiz);
 
 function displayQuestion() {
-    
+
     if (questionIndex >= quiz.length) {
         questionElement.textContent = `${quiz.length}問中、${score}問正解！`;
         document.querySelectorAll(".choice-btn").forEach(btn => btn.style.display = "none");
@@ -233,8 +233,7 @@ function displayQuestion() {
 buttons.forEach(button => {
     button.addEventListener("click", function() {
         const currentQuiz = quiz[questionIndex];
-        
-        
+        buttons.forEach(btn => btn.disabled = true);
         if (button.textContent === currentQuiz.answer) {
             resultElement.textContent = "正解！⭕";
             score++;
@@ -246,7 +245,8 @@ buttons.forEach(button => {
         setTimeout(() => {
             resultElement.textContent = ""; 
             questionIndex++;                
-            displayQuestion();             
+            displayQuestion();         
+            buttons.forEach(btn => btn.disabled = false);
         }, 1000);
     });
 });

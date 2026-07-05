@@ -1,4 +1,3 @@
-
 const quizData = {
     "初級": [
         {
@@ -217,9 +216,9 @@ function displayQuestion() {
         document.querySelector(".retry-btn").style.display = "block";
         return;
     }
-         document.querySelectorAll(".choice-btn").forEach(btn =>btn.style.display="inline-block");
-         const currentQuiz=quiz[questionIndex];
-         questionElement.textContent=currentQuiz.question;
+        document.querySelectorAll(".choice-btn").forEach(btn =>btn.style.display="inline-block");
+        const currentQuiz=quiz[questionIndex];
+        questionElement.textContent=currentQuiz.question;
 
 
     questionElement.textContent = currentQuiz.question;
@@ -252,12 +251,12 @@ buttons.forEach(button => {
 });
 
 function gotoHome(){
-    document.querySelector(".Quiz").style.display="none";
-    document.querySelector(".quiz").style.display="flex";
-    document.querySelector(".retry-btn").style.display="none";
-    questionIndex=0;
-    score=0;
-     document.querySelector(".button-container").style.display="flex";
+        document.querySelector(".Quiz").style.display="none";
+        document.querySelector(".quiz").style.display="flex";
+        document.querySelector(".retry-btn").style.display="none";
+        questionIndex=0;
+        score=0;
+        document.querySelector(".button-container").style.display="flex";
     }
 
 

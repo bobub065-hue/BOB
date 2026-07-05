@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>オレカバトル２クイズ問題</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz">
+        <h1>難易度を選択してね！</h1>
+        <div class="button-container">
+            <button class="easy_btn">初級</button>
+            <button class="normal_btn">中級</button>
+            <button class="hard_btn">上級</button>
+        </div>
+    </div>
+    <div class="Quiz" style="display: none;">
+        <h2 class="question"></h2>
+        <div class="result"></div>
+        <button class="retry-btn" onclick="gotoHome()">難易度選択画面に戻る</button>
+        <div class="answer-buttons">
+            <button class="choice-btn"></button>
+            <button class="choice-btn"></button>
+            <button class="choice-btn"></button>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -33,7 +33,7 @@ const quizData = {
         {
             question: "(7) 乙姫マヨリと魔王オロロソの関係はつぎのうちどれ？",
             choices: ["親子", "兄妹", "主従"],
-            answer: "親子"
+            answer: "兄妹"
         },
         {
             question: "(8) シルバードラゴンは次のうち何章に出現する？",

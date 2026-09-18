@@ -219,8 +219,6 @@ function displayQuestion() {
         document.querySelectorAll(".choice-btn").forEach(btn =>btn.style.display="inline-block");
         const currentQuiz=quiz[questionIndex];
         questionElement.textContent=currentQuiz.question;
-
-        questionElement.textContent=currentQuiz.question;
     
     buttons.forEach((button, index) => {
         button.textContent = currentQuiz.choices[index];

@@ -228,6 +228,7 @@ function displayQuestion() {
 buttons.forEach(button => {
     button.addEventListener("click", function() {
         const currentQuiz = quiz[questionIndex];
+        btn.blur();
         buttons.forEach(btn => btn.disabled = true);
         if (button.textContent === currentQuiz.answer) {
             resultElement.textContent = "正解！⭕";
@@ -242,7 +243,6 @@ buttons.forEach(button => {
             questionIndex++;                
             displayQuestion();         
             buttons.forEach(btn => btn.disabled = false);
-            btn.blur();
         }, 1000);
     });
 });

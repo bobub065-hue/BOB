@@ -219,6 +219,8 @@ function displayQuestion() {
         document.querySelectorAll(".choice-btn").forEach(btn =>btn.style.display="inline-block");
         const currentQuiz=quiz[questionIndex];
         questionElement.textContent=currentQuiz.question;
+
+        questionElement.textContent=currentQuiz.question;
     
     buttons.forEach((button, index) => {
         button.textContent = currentQuiz.choices[index];
@@ -228,7 +230,6 @@ function displayQuestion() {
 buttons.forEach(button => {
     button.addEventListener("click", function() {
         const currentQuiz = quiz[questionIndex];
-        btn.blur();
         buttons.forEach(btn => btn.disabled = true);
         if (button.textContent === currentQuiz.answer) {
             resultElement.textContent = "正解！⭕";

@@ -242,6 +242,7 @@ buttons.forEach(button => {
             questionIndex++;                
             displayQuestion();         
             buttons.forEach(btn => btn.disabled = false);
+            btn.blur();
         }, 1000);
     });
 });
